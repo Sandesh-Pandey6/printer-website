@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore a wide range of printers at our e-commerce store. High-quality printers for home and office use.">
+    <meta name="keywords" content="printers, office printers, home printers, laser printers, inkjet printers">
+    <meta name="author" content="Cuba">
+    <title>Contact Form</title>
+    <link rel="icon" type="../image/x-icon" href="../Icons/Contact.png" />
+    <link rel="stylesheet" href="../CSS/Contact.css" />
+    <link rel="stylesheet" href="../CSS/Universal.css" />
+</head>
+
+<body>
+      <!-- This Is The Header Section -->
+  <header>
+    <!-- This is an Anchor Tag Which Will Represent The Logo Of The Company & Redirect To Home Section-->
+    <a href="../../index.html" class="logo"><img src="../image/logo.png" alt="logo" /></a>
+
+    <!-- This Is For The Nav Menu  -->
+    <ul class="navmenu">
+        <li><a class="nav-item" href="../../index.html">Home</a></li> <!--Home Section-->
+        <li><a class="nav-item" href="Product.html">Product</a></li><!--Product Section-->
+        <li><a class="nav-item" href="Blog.html">Blog</a></li><!--Blog Section-->
+        <li><a class="nav-item" href="Research.html">Research</a></li><!--Research Section -->
+        <li><a class="nav-active" href="Contact.html">Contact </a></li><!--Contact Section & class nav-active Will Create an Underline Below The Active Nav Section -->
+        <li><a class="nav-item" href="About Us.html">About Us</a></li><!--About Us Section-->
+    </ul>
+
+    <!-- These Are The Nav Icons -->
+    <div class="navicons">
+
+        <!-- This Is To Count The Number Of Products In The Cart -->
+
+        <div class="cart-icon">
+            <a href="#"><img src="../Icons/Cart.svg" alt="Cart"></a><!--Cart Logo-->
+            <span id="cartcount">0</span><!--Cart Count Number-->
+        </div>
+
+        <a href="#"><img src="../Icons/User.svg" alt="User" /></a><!--User Logo-->
+    </div>
+</header>
+
+    <div class="contact">
+        <form action="" class="LeftPortion"> <!--This Is For The Form Input in The Left Section-->
+            <div class="lefttitle"><!--Left Section For Form-->
+                <h2>Get In Touch</h2>
+                <hr/>
+            </div>
+            
+            <input id="Name" type="text" name="Name" placeholder="Your Full Name" class="Contact_Input"  /> <!--Full Name-->
+            <input id="Number" name="Number" placeholder="Your Phone Number" class="Contact_Input"  /><!--Number-->
+            <input id="Email"  name="Email" placeholder="Your Email" class="Contact_Input"  /><!--Email-->
+            <textarea id="Message" name="Message" placeholder="Your Message" class="Contact_Input"></textarea><!--Message-->
+
+            <div class="button"><!--Button Div-->
+                <button type="submit" onclick="validateForm()">&nbsp &nbsp Submit<img src="../Icons/Submit.png" alt="Submit Button" /></button><!--Submit Button-->
+            </div>
+            
+        </form>
+        
+        <div class="RightPortion"><!--This Is For The Picture Section in The Right -->
+            <img src="../Icons/Contact Logo.png" alt="Get In Touch Icon" />
+        </div>
+        
+    </div>
+
+
+
+    <!-- This Is For The Footer Section  -->
+    <footer>
+        <div class="Footer_Logo">
+            <img src="../image/logo.png" alt="Logo" /><!--Company Logo-->
+        </div>
+        <div class="SocialMedia_Icons">
+            <a href="#"><img src="../Icons/Facebook Logo.png" alt="Facebook Logo" /></a> <!--Facebook Logo For Contact-->
+            <a href="#"><img src="../Icons/Twitter.png" alt="Twitter Logo" /></a><!--Twitter Logo For Contact-->
+            <a href="#"><img src="../Icons/Instagram.png" alt="Instagram Logo" /></a><!--Instagram Logo For Contact-->
+            <a href="#"><img src="../Icons/Whatsapp.png" alt="Whatsapp Logo" /></a><!--Whatsapp Logo For Contact-->
+        </div>
+        
+
+        <div class="CopyRight">
+            <p>&#169; 2024 CUBA. All Rights Reserved</p><!--Copyright At Bottom-->
+        </div>
+    </footer>
+</body>
+
+<script src="../Javascript/contact.js">
+   
+</script>
+
+</html>

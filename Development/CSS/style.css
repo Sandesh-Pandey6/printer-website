@@ -1,0 +1,331 @@
+
+/* This Padding Is For The Text in The Front  */
+section {
+    padding: 13% 7%;
+}
+
+.imageslide{ /* For Positioning The Images And Text Inside Of It*/
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.slide { /*For Images Used In Slides*/
+    width: 100%;
+    margin-top: -80px;/*Only Because Of Screen Size Issue */
+    position: absolute;
+    transition: 1s;
+}
+
+.main-text {/*For Text Above The Image Sliders*/
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.main-text h1 { /*For The H1 Present In H1 Floating main-text*/
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.main-text p {/* For The Paragraph Present in The Floationg Main Text*/
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 40px;
+}
+
+.Catchy_Line {  /* Also The Pargraph In The Main Text*/
+    font-size: 25px;
+    padding-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Shop-Now {/*For Anchor Tag Div in Main-Text*/
+    font-size: 18px;
+    color: black;
+    border: 2px solid rgb(170, 134, 134);
+    padding: 10px;
+    transition: all .50s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #e7d7d7d2;
+
+
+}
+.Shop-Now:hover {/*Hover Affect To Anchor Tag*/
+    background-color: black;
+    color: white;
+}
+
+
+.shopping-category{ /*For Heading*/
+    text-align: center;
+    font-size: 23px;
+    color: black;
+}
+/* These Are For The Category Section */
+
+.Text{ /*For The Shop By Types Of Printer */
+    font-size: 20px;
+    color: rgb(77, 77, 81);
+    letter-spacing: 2px;
+    padding: 0px 40px;
+}
+
+
+.Text span{ /*For Coloring The Category to red*/
+    color: red;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.Shop {/* For Giving Margin To Whole Category Section*/
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.Category { /* For Aligning All The Different Printer Under A Category*/
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.Category h3{/*For Changing Font Size As Well As Adding Padding To H3 Under Category Class*/
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.Category p {/*For Setting Different Properties to THe H3 Under The Class Category*/ 
+    text-align: justify;
+    max-width: 350px;
+    line-height: 23px;
+    padding-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.next { /* For Arrow After Shop Now*/
+    max-width: 12px;
+}
+
+
+/* This Section Belongs To Printer Selector */
+.printerselector { /* Apply To Whole Printer Selector Div*/
+    display: flex;
+    background-color: #ccc;
+    margin: 0px 40px;
+    margin-bottom:100px ;
+    
+
+}
+.chooseprinter:hover{ /* Hover Effect To The Image In Printer Selector*/
+    transform: scale(1.14);
+
+}
+
+.chooseprinter {/*Apply To The Image In Printer Selector*/
+    max-width: 800px;
+    height: auto;
+    padding: 30px 50px;
+    transition: all 1.2s ease;
+
+}
+.text {
+    padding-right: 120px;
+    padding-left: 60px;
+    text-align: justify;
+    /* border: 1px solid red; */
+    background-color: #c5c3c3;
+}
+
+.text h1 { /* Apply To Heading In Printer Selector*/
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.text p {/* Apply To Paragraph In Printer Selector*/
+    font-size: 14px;
+    line-height: 27px;
+    font-family:'Nunito';
+    text-transform: capitalize;
+}
+.text span{/* Apply To Span In Printer Selector*/
+    color: #352d2d;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    padding-top: 5px;
+
+}
+
+.text button {/* Apply To The Button */
+    background-color:#319ce9;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    margin: 20px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.text button:hover{/* Add Hover Effect To Button*/
+    background-color: rgb(88, 88, 230);
+    transition: all.82s ease;
+    transform: scale(1.1);
+}
+
+
+/* This Is The Coupon Corner Section  */
+
+.Coupon-corner{ /* This Is For The Heading */
+    text-align: center;
+    color: #7f7057;
+    padding-bottom: 40px;
+    font-size: 45px;
+}
+.Coupon-corner img{/* This is For The Token Image */
+    max-width: 670px;
+}
+.Coupon{/*Contains Bth The Coupon Card*/
+    width: 100%;
+    height: 650px;
+    background: #f0fff3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+.coupon-1ogo{ /*This Is For The Fixing Size OF Company Logo*/
+    width: 100px;
+    border-radius: 50%;
+}
+.coupon-card{/*This Includes All The Details Of The Coupon Card*/
+    background:linear-gradient(135deg,#7158fe,#9d4de6);
+    color: #fff;
+    text-align: center;
+    padding: 40px 80px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+.coupon-card h3{/*Applies To H3 inside coupon-card*/
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 40px;
+    padding-top: 10px;
+}
+.coupon-card p { /*Applies To paragraph Inside coupon-card*/
+    font-size: 15px;
+}
+
+.coupon-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    
+}
+#cpnCode,#cpnCode1{
+    border: 1px dashed #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+#cpnBtn,#cpnBtn1{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 20px;
+    color: #7158fe;
+    cursor: pointer;
+}
+.circle1,.circle2{
+    background: #f0fff3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.circle1{/* This Will Create a circle */
+    right: -25px;
+}
+.circle2{/* For Circle*/
+    left:-25px;
+}
+
+.Coupon-slider{/*For All The Coupon Voucher */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  
+}
+.Coupon-slider img{ /*For Horizontally Aligning Photos*/
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+
+
+/* This Is The Why Us Section  */
+.chooseus{ /*Applied To The Whole chooseus div To Align It To Center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chooseus1{ /*Appied To The Sub div Of Chooseus To Act As A Relative Position For Inner Divs*/
+    position: relative;
+    width: 80%;
+    height: 400px;
+}
+.chooseus h1{/* Applied To H1 Tag OF Chooseus*/
+    text-align: center;
+    font-family: Poppins_dark,'Times New Roman', Times, serif;
+    color: #3d3535;
+    font-size: 45px;
+   
+}
+.reason1,.reason2,.reason3{/*Applied To All Inner Div That Contains Points To Choose us over Competition*/
+    width: 300px;
+    max-height: 300px;
+    text-align: justify;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+.reason1 p,.reason2 p,.reason3 p{ /* Applied To All  The Paragraphs For Different Reason*/
+    font-family: 'Nunito','Times New Roman', Times, serif;
+    font-size: 12px;
+    line-height: 17px;
+}
+.reason1 h2,.reason2 h2,.reason3 h2{/* For Reason's Heading*/
+    font-size: 20px;
+    font-weight: 100px;
+    font-family: Nunito,'Times New Roman', Times, serif;
+    padding-bottom: 3px;
+    padding-top: 8px;
+   
+}
+.reason1{ /* For Positioning the Reason 1*/
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.reason2{/* For Positioning the Reason 2*/
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+.reason3{/* For Positioning the Reason 3*/
+    position: absolute;
+    top: 40%;
+    right: 37%;
+    background-color:#61e7ecb8;
+}

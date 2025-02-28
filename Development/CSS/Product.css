@@ -1,0 +1,271 @@
+/* These Are For The Add To Cart Pop Ups */
+
+.pop{/*For Positioning The Add To Cart Pop Up*/
+    background-color: rgb(173, 173, 229);
+    font-size: 20px;
+    position: fixed;
+    padding: 15px;
+    bottom: 35px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 8px -8px rgba(0, 0, 0, 0.3);
+    display: none;
+    
+}
+.pop-open{ /*Will Be Called To Make Popup Visible*/
+    display: block;
+
+}
+#span_red { /*Add Red Color To Shop By Brands*/ 
+    color: rgb(247, 5, 5);
+    font-weight: 550;
+    padding: 0px;
+    font-size: 35px;
+}
+
+#Category { /* For Shop By Category Text Out There*/
+    font-size: 35px;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.item_Collection {/*Contains All The Product Of Each Company*/
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.SortBy {/*Applicable To The Sort By Text*/
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 40px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+select {/*Applicable To Select Option*/
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.item { /* Applicable To The Whole Card*/
+    width: 23%;
+    min-width: 250px;
+    border: 1px solid #cce7d0;
+    border-radius: 15px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.04);
+    transition: all .4s ease;
+    position: relative;
+}
+.item:hover { /*Add Hover Affect To The Card*/
+    transform: scale(1.05);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+.Company_logo {/*Applicable To Company Logo*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+
+}
+
+.Logo_Padding {/*Give Padding To Brand Logos */
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+
+.HP_Logo {/*For Positioning HP Logo*/
+    max-width: 80px;
+}
+
+.brand {/*For Brand Name*/
+    color: #606063;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.description {/*For The Description Of Printer*/
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.description p { /* For All The Paragraph In The Description Class*/
+    padding-bottom: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding-right: 10px;
+
+}
+
+.updatedprice {/*For New Price Text*/
+    text-decoration: line-through;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.discount {/*For Discount Text */
+    font-size: 13px;
+    color: gray;
+}
+
+.tag {/*Align Buy Now And Bag Icon To Center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(45, 159, 150);
+    max-width: px;
+    padding: 17px 8px;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.tag a {/*For Positioning The Anchor Tag To The Center */
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.tag img {/*For Bag Icon In Shop Now*/
+    max-width: 24px;
+}
+
+.newprice { /*For New Price After Discount*/
+    color: green;
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.item img {/*For Resizing The Image Of The Printers*/
+    width: 100%;
+    border-radius: 20px;
+}
+
+.star {/*For Star Icon*/
+    max-width: 13px;
+    height: 13px;
+
+}
+
+.ratting { /*For Ratings*/
+    display: flex;
+    gap: 4px;
+}
+
+hr {/*For Adding Margin And Width To Horizonatl Line*/ 
+    width: 86%;
+    margin-bottom: 10px;
+}
+
+/* These Are The Classes To Resize And Fit Image Inside The Card Collectively */
+
+.Hp {/*For Hp Pictures*/
+    width: 300px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 250px;
+    padding-left: 30px;
+}
+
+.Can {/*For Canon Pictures*/
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    max-width: 250px;
+    padding-left: 30px;
+
+}
+/* These Are All For Individually Resizing The Printer Of Different Size Which Cannot Be Resized With a Specific Class */
+
+#C6 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    max-width: 240px;
+    padding-left: 30px;
+
+}
+
+#B3 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    max-width: 300px;
+
+}
+
+.E1 {
+    max-width: 250px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 25px;
+}
+
+.E3 {
+    max-width: 250px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+
+}
+
+
+
+/* These Are All For The Sticker In The Top Corner To Show Availability And Sale Of Printer */
+
+.Sticker_Sale {/* For Sale Sticker*/
+    color: #2c2c2c;
+    background-color: rgb(53, 167, 53);
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border-radius: 1px;
+    padding: 0px 14px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 800;
+
+}
+
+.Sold_Out {/*For Sale Out Sticker*/
+    display: inline-block;
+    background-color: rgba(236, 19, 19, 0.601);
+}
+
+.Few_Left {/*For Few Left Sticker*/
+    display: inline-block;
+    background-color: rgba(240, 240, 26, 0.59);
+}
+
+
+.Coming_Soon {/*For Coming Out Sticker*/
+    display: inline-block;
+    background-color: rgba(82, 82, 243, 0.655);
+}
+
+.cmg {/*For Showing Date Of Launch*/
+    color: rgb(139, 155, 21);
+    font-size: large;
+    font-weight: 600;
+
+
+}

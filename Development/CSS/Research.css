@@ -1,0 +1,48 @@
+/* This is for Research Section */
+
+/* These Are For The Reference And Website Image Positioning and Sizing  */
+.research-section-img img{
+    width: 100%;
+    max-width: 650px;
+    max-height: 300px; 
+}
+/* This Is For The Verical line Between Reference And Our Website */
+.vertical {
+    border-left: 2px solid #ccc;
+    height: 280px;
+    left:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* This Is For Putting Reference And Our Wbsite Image Side By Side */
+.ref{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    margin: 0px 40px;
+    margin-top: 70px;
+}
+/* This Is For All The Text Below Images */
+.text{
+    background-color: #f3ebeb41;
+    padding: 20px;
+    margin: 10px 40px;
+    margin-bottom: 90px;
+}
+/* This will Apply To The Paragraph Section */
+.text p{
+    font-family: Nunito,'Times New Roman', Times, serif;
+    text-align: justify;
+    line-height: 25px;
+}
+/* This Will Apply To The Heading In the Text Portion */
+.text h2{
+    font-size: 27px;
+    padding-bottom: 10px;
+}
+
+

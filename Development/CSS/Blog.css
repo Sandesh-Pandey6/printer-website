@@ -1,0 +1,156 @@
+/* This Is For The Whole Blog Preview Section */
+.section1{
+    border: 1px solid #ccc;
+    padding: 90px;
+    margin:110px 170px;
+    position: relative;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+/* For All The Text In Blog Preview */
+.text{
+    width: 50%;
+    
+}
+/* For Header In Blog Preview */
+.text h1{
+    font-size: 30px;
+    color: #2c2c2c;
+    padding: 10px 0px;
+}
+/* For The Text Paragraph In Blog preview */
+.text1{
+    text-align: justify;
+    padding-top: 10px;
+    line-height: 25px;
+    color:black;
+    font-size: 14px;
+    font-family: Nunito,'Times New Roman', Times, serif;
+
+}
+/* This Will Add Decoration To The Learn Text */
+.learn{
+    text-decoration: underline;
+    color: rgb(132, 132, 184);
+    cursor: pointer;
+}
+/* Changes Color When Hovered Over Learn Text */
+.learn:hover{
+    color: rgba(163, 178, 176, 0.619);
+
+}
+/* This will set The Size Of The Arrow After The Learn Text */
+.arrow{
+    max-width: 10px;
+   
+}
+/* This Will Apply To All The Images In The Blog Preview Section */
+.images2{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  
+}
+/* This Will Set The Individual Size Of The Images In The Blog Section */
+.first img,.second img{
+    max-width: 220px;
+    max-height: auto;
+    max-height: 220px;
+}
+/* This Will Horizontally Align the Images Inside Them */
+.first,.second{
+    display: flex;
+    gap:5px;
+}
+/* This Will Add The Hover Affect To All The Images Present in the Blog Preview Section */
+.first img:hover,.second img:hover{
+    transform: scale(1.07);
+}
+
+/* This Will Hide The Detailed Portion Of The Blog  */
+.innerinfo1{
+    margin: 4% 20%;
+    text-align: justify;
+    position: relative;
+    display: none;
+}
+/* This Will Apply To The First Heading In Detailed Blog Section */
+.innerinfo1 h1{
+    text-align: left;
+    padding: 30px 0px 15px 0px;
+    font-size: 50px;
+    color: #2c2c2c;
+}
+/* This Will Apply In The Paragraph Section  */
+.innerinfo1 p{
+    font-family: Nunito,'Times New Roman', Times, serif;
+    line-height: 30px;
+    font-size: 18px;
+}
+/* This Will Apply To The Second Heading In Detailed Blog Section */
+  h2{
+    padding: 40px 0px 10px 0px;
+    font-size: 30px;
+  }
+  /* This Will Apply To The First image In Blog Detailed Section */
+  .evolveimg{
+    width: 100%;
+    max-width: 900px;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   
+  }
+  /* This Will Be Applied To The H3 Tag in Detailed Blog preview Section */
+h3{
+    padding: 20px 0px 10px 0px;
+    
+}
+/* Apply To Rest All The Images In tHe Detailed Blog Section */
+.impacttech{
+    width: 100%;
+    max-width: 900px;
+    max-height: 400px;
+    padding-bottom: 20px;
+    
+}
+
+/* This Is For Table Present Inside The Blog Section */
+
+/* This Will Apply For The Whole Table */
+table { 
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+/* For TableHead And Tabledata */
+th, td {
+    border: 1px solid #e0dada;
+    text-align: left;
+    padding: 10px;
+}
+/* For Table Header Only */
+th {
+    background-color: #eae3e3;
+}
+
+
+/* Will Apply To Cross Image To Close Detailed Blog */
+.cross  img{
+    max-width: 30px;
+}
+/* Will Apply To Cross To Close Detailed Blog */
+.cross{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: -220px;
+    margin-bottom: -10px;
+    cursor: pointer;
+
+}
+

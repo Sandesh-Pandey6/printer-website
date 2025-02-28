@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore a wide range of printers at our e-commerce store. High-quality printers for home and office use.">
+    <meta name="keywords" content="printers, office printers, home printers, laser printers, inkjet printers">
+    <meta name="author" content="Cuba">
+    <title> CUBA Homepage</title>
+    <link rel="icon" type="Development/image/x-icon" href="Development/Icons/Home.png">
+
+    <link rel="stylesheet" href="Development/CSS/Universal.css">
+    <link rel="stylesheet" href="Development/CSS/style.css">
+
+
+
+    
+</head>
+ <!--  Internal CSS For Project VIVA -->
+ <style>  
+    /* For Swipe Left Right Div And Button */
+
+    #prev {
+        /*For Previous Button Div */
+        position: absolute;
+        top: 35%;
+        left: 0px;
+        transform: rotate(180deg);
+        /*Rotates The Image*/
+    }
+
+    #another {
+        /* For Next Button Div*/
+        position: absolute;
+        top: 35%;
+        right: 0px;
+    }
+
+    #another button,
+    #prev button {
+        /*For The Buttons*/
+        border: 2px solid #ccc;
+        background-color: transparent;
+        padding: 15px 0px;
+    }
+
+    #prev img,
+    #another img {
+        /*For The Size Of The Images Of Next*/
+        width: 40px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+
+    <!-- This Is The Header Section -->
+    <header>
+        <!-- This is an Anchor Tag Which Will Represent The Logo Of The Company & Redirect To Home Section-->
+        <a href="index.html" class="logo"><img src="Development/image/logo.png" alt="logo" /></a>
+
+        <!-- This Is For The Nav Menu  -->
+        <ul class="navmenu">
+            <li><a class="nav-active" href="index.html">Home</a></li>
+            <!--Home Section & class nav-active Will Create an Underline Below The Active Nav Section-->
+            <li><a class="nav-item" href="Development/HTML/Product.html">Product</a></li><!--Product Section -->
+            <li><a class="nav-item" href="Development/HTML/Blog.html">Blog</a></li><!--Blog Section-->
+            <li><a class="nav-item" href="Development/HTML/Research.html">Research</a></li><!--Research Section-->
+            <li><a class="nav-item" href="Development/HTML/Contact.html">Contact </a></li><!--Contact Section -->
+            <li><a class="nav-item" href="Development/HTML/About Us.html">About Us</a></li><!--About Us Section-->
+        </ul>
+
+        <!-- These Are The Nav Icons -->
+        <div class="navicons">
+
+            <!-- This Is To Count The Number Of Products In The Cart -->
+            <div class="cart-icon">
+                <a href="#"><img src="Development/Icons/Cart.svg" alt="Cart"></a><!--Cart Logo-->
+                <span id="cartcount">0</span><!--Cart Count Number-->
+            </div>
+
+            <a href="#"><img src="Development/Icons/User.svg" alt="User" /></a><!--User Logo-->
+        </div>
+    </header>
+
+
+    <main class="imageslide"><!--This Div Is For The Images For Slideshows-->
+        <img src="Development/image/banner1.png" class="slide" alt=""><!--Banner1-->
+        <img src="Development/image/banner2.png" class="slide" alt=""><!--Banner2-->
+        <img src="Development/image/banner4.png" class="slide" alt=""><!--Banner3-->
+        <img src="Development/image/banner3.png" class="slide" alt=""><!--Banner4-->
+
+        <div id="prev" onclick="goPrev()">
+            <button><img src="Development/image/right-arrow.png" alt=""></button><!--This Will Slide The Image To Previous-->
+        </div>
+        <section class="main-home"><!--Div For Aligning Text Above The Pictures-->
+            <div class="main-text"><!--Div For Adding Text-->
+                <h1>Ideas Worth Printing </h1>
+                <p class="Catchy_Line">Make It Happen At <span
+                        style="color: red;font-size: 28px;letter-spacing: 1.7px;"><b> Cuba</b></span> </p><!--Slogan-->
+                <p>Printing Perfection.</p><!--Supportive Slogan-->
+                <a href="Development/HTML/Product.html" class="Shop-Now">Shop Now <img src="Development/Icons/Bag.png" alt="Bag" class="Bag"
+                        style="width: 20px;"> </a>
+            </div>
+        </section>
+        <div id="another" onclick="goNext()"><!--This Will Slide The Image To Another-->
+            <button><img src="Development/image/right-arrow.png" alt=""></button>
+        </div>
+
+    </main>
+
+
+    <!-- Here Comes The Shopping Categories Section -->
+
+    <div class="shopping-category"><!--Div For Aligning Text To The Center -->
+        <h1>Shopping Categories </h1>
+    </div>
+
+
+    <div class="Shop"><!--Div For All The Categories To Give Margin Collectively-->
+        <div class="Text"><!--Div For Declaring The Categories-->
+            <h1>Shop By <span>USE</span></h1><!--Category 1-->
+        </div>
+
+        <div class="Category"><!--Div For Wrapping The 3 Sub Categories Of That-->
+            <div class="Category-detail"><!--Div For Giving This Specific Category Some Style-->
+                <img src="Development/image/Home.webp" alt="">
+                <h3>Home</h3><!--Category1-->
+                <p>Stylish and compact for printed photos and bold documents at home</p><!--Category Small Intro-->
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a><!--Anchor Tag For Shop Now-->
+            </div>
+
+
+            <div class="Category-detail"><!--Div For Giving This Specific Category Some Style-->
+                <img src="Development/image/Work.webp" alt="">
+                <h3>Work</h3><!--Category2-->
+                <p>Speed and convenience for increased productivity</p><!--Category Small Intro-->
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a><!--Anchor Tag For Shop Now-->
+            </div>
+
+
+            <div class="Category-detail"><!--Div For Giving This Specific Category Some Style-->
+                <img src="Development/image/Professionals.webp" alt="">
+                <h3>Professionals</h3><!--Category3-->
+                <p>Print photos and bring them to life in professional size and quality</p><!--Category Small Intro-->
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a><!--Anchor Tag For Shop Now-->
+            </div>
+
+        </div>
+
+
+
+        <!-- Rest Two Category Style And Alignment Is Same So No Comments.Dont Mind -->
+
+        <div class="Text">
+            <h1>Shop By <span>Function</span></h1>
+        </div>
+        <div class="Category">
+            <div class="Category-detail">
+                <img src="Development/image/3-in-1.webp" alt="">
+                <h3>3-in-1</h3>
+                <p>Print , Copy ,Scan</p>
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a>
+            </div>
+
+            <div class="Category-detail">
+                <img src="Development/image/Single Function.webp" alt="">
+                <h3>Single Function</h3>
+                <p>Print Only</p>
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a>
+            </div>
+
+            <div class="Category-detail">
+                <img src="Development/image/4-in-1.webp" alt="">
+                <h3>4-in-1</h3>
+                <p>Print, Copy, Scan and Fax</p>
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a>
+            </div>
+        </div>
+
+
+
+        <div class="Text">
+            <h1>Shop By <span>Type</span></h1>
+        </div>
+        <div class="Category">
+            <div class="Category-detail">
+                <img src="Development/image/Inkjet.webp" alt="">
+                <h3>Inkjet</h3>
+                <p>Print documents and photos easily</p>
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a>
+            </div>
+
+            <div class="Category-detail">
+                <img src="Development/image/Laser.webp" alt="">
+                <h3>Laser</h3>
+                <p>Experience business-quality prints and performance</p>
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a>
+            </div>
+
+            <div class="Category-detail">
+                <img src="Development/image/Refillable Ink Tank Printers.webp" alt="">
+                <h3>Refillable Ink Tank Printer</h3>
+                <p>Increase productivity with high-yield low-cost printing</p>
+                <a href="Development/HTML/Product.html"> Shop now <img class="next" src="Development/image/next.png" alt=""><img class="next"
+                        src="Development/image/next.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Here Starts The Printer Selector Section -->
+
+
+    <div class="printerselector"><!--Div For Whole Printer Selector -->
+        <div><!--Div For Priter Selector Image-->
+            <img class="chooseprinter" src="Development/image/ChoosePrinter.jpg" alt="">
+        </div>
+        <div class="text"><!--Div For Text Inside The Priter Selector-->
+            <h1>Printer Selector</h1>
+            <p>Find the perfect printer for your home or office use. <br>Our printer selector tool is designed to help
+                you choose the best printer based on your needs. You can choose from a variety of printers, ranging from
+                inkjet to laser, and our tool will recommend the best matches for you. <br> This way, you can be sure
+                that you are getting the right printer for your needs. <br><span>Try It For Yourself !</span></p>
+            <button>FIND MY PRINTER</button><!--Button For Find My Printer-->
+        </div>
+    </div>
+
+
+    <!-- Here Starts The Coupon Corner Section -->
+
+    <h1 class="Coupon-corner">Coupons Corner <img src="Development/image/coupons.png" style="width: 50px;" alt=""></h1>
+    <div class="Coupon"><!--Div To Align Coupon Horizonatally-->
+        <div class="coupon-card"><!--Div For Coupon 1-->
+            <img class="coupon-1ogo" src="Development/image/Canon Logo.png">
+            <h3>30% Flat OFF On All Payment Of Canon Printer <br>Using <i>VISA</i> OR <i>MASTERCARD</i></h3>
+            <div class="coupon-row">
+                <span id="cpnCode">CANONMAX24</span><!--Coupon Code-->
+                <span id="cpnBtn">COPY CODE</span><!--Copy Button-->
+            </div>
+            <p>Valid Till: 19 Jan, 2024</p><!--validity-->
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+
+
+        <div class="coupon-card">
+            <img class="coupon-1ogo" src="Development/image/Brother Logo.jpg">
+            <h3>20% Flat OFF On All Payment Of Brother Printer <br>Using <i>VISA</i> OR <i>MASTERCARD</i></h3>
+            <div class="coupon-row">
+                <span id="cpnCode1">BROTHERERA24</span>
+                <span id="cpnBtn1">COPY CODE</span>
+            </div>
+            <p>Valid Till: 20 May, 2024</p><!--Date Of Validity-->
+            <div class="circle1"></div><!--Div For Circle1-->
+            <div class="circle2"></div><!--Div For Circle2-->
+        </div>
+
+        <!-- This is Image Slider For Coupon -->
+        <div class="Coupon-slider">
+
+            <img src="Development/image/Coupon1.png" alt="Coupon1"><!--Coupon Pic 1-->
+            <img src="Development/image/Coupon2.png" alt="Coupon2"><!--Coupon Pic 2-->
+            <img src="Development/image/Coupon3.png" alt="Coupon3"><!--Coupon Pic 3-->
+
+
+        </div>
+    </div>
+    </div>
+
+
+    <div>
+        <div>
+            <div class="chooseus">
+                <div class="chooseus1">
+                    <h1>Why choose us ?</h1>
+                    <div class="reason1">
+                        <img src="Development/Icons/fast-delivery.png" alt=""><!--image For Fast Delivery-->
+                        <h2>Fast And Free Shipping</h2><!--Reason1-->
+                        <p>With free shipping, your order is delivered five to eight days after all your items are
+                            available to
+                            ship, including pre-order items.</p><!--Reason Detail-->
+                    </div>
+                    <div class="reason2">
+                        <img src="Development/Icons/insurance-policy.png" alt=""><!--image Showing Secured-->
+                        <h2>Warranty Protection</h2><!--Reason 2-->
+                        <p>Get 3 years of full warranty coverage covering all manufacturing defects, software issues,
+                            and
+                            electrical malfunctions or breakdowns.</p><!--Reason-detail-->
+
+                    </div>
+
+                    <div class="reason3">
+                        <img src="Development/Icons/shield.png" alt=""><!--Shield Image-->
+                        <h2>Premium Material</h2><!--Reason 3-->
+                        <p>Get Genuine and Premiumly Built Printers
+                            From Globally Recognized Printer Brands with Crazy Discounts & Offers.</p>
+                        <!--Reason Detail-->
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+            <!-- This Is For The Footer Section  -->
+            <footer>
+                <div class="Footer_Logo">
+                    <img src="Development/image/logo.png" alt="Logo" /><!--Company Logo-->
+                </div>
+                <div class="SocialMedia_Icons">
+                    <a href="#"><img src="Development/Icons/Facebook Logo.png" alt="Facebook Logo" /></a>
+                    <!--Facebook Logo For Contact-->
+                    <a href="#"><img src="Development/Icons/Twitter.png" alt="Twitter Logo" /></a><!--Twitter Logo For Contact-->
+                    <a href="#"><img src="Development/Icons/Instagram.png"
+                            alt="Instagram Logo" /></a><!--Instagram Logo For Contact-->
+                    <a href="#"><img src="Development/Icons/Whatsapp.png" alt="Whatsapp Logo" /></a><!--Whatsapp Logo For Contact-->
+                </div>
+
+
+                <div class="CopyRight">
+                    <p>&#169; 2024 Cuba .All Rights Reserved</p><!--Copyright At Bottom-->
+                </div>
+            </footer>
+
+
+</body>
+<script src="Development/Javascript/script.js"></script>
+
+</html>

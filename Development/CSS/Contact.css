@@ -1,0 +1,96 @@
+/* These Are All For The Contact Page Which Include Two Sections - Left& Right */
+/*  Left Contains Input Field */
+/* Right Contains Picture  */
+
+.contact{ /* Includes Both Left And Right Portion*/
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c0aa5c3f;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+}
+.LeftPortion{ /*For Whole Left Section*/
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    color: #fef7f7;
+}
+.LeftPortion img{ /*For The Submit Arrow*/
+    max-width: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.LeftPortion h2{ /*For Get In Touch Text*/
+    font-weight: 600;
+    color: rgb(147, 89, 204);
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.lefttitle hr{ /*For The Horizonatl Line Below Get InTouch */
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Contact_Input{/*For Input fields*/
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    margin: 30px;
+    border: 1px solid rgb(182, 149, 149);
+}
+
+.LeftPortion textarea{ /*For The Message Text Area*/
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.Contact_Input:focus{/*For Adding Focus To Selected Input Field*/
+    border: 2px solid rgb(205, 170, 170);
+}
+.Contact_Input::placeholder{ /*For Placeholder In Input Field*/
+    color: #a9a9a9;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.LeftPortion button{ /*For Content Inside Button*/
+    display: flex;/*For Positioning The Text In Button*/
+    align-items: center;
+    justify-content: center;
+    padding: 15px 80px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 20px;
+    background:linear-gradient(270deg,#dd8241,#e2002a);
+    cursor: pointer;
+    transition: all .42s ease;
+    
+}
+
+.button { /*For Button Div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LeftPortion button:hover{ /*For Submit Button Hover Affect */
+    transform: scale(.8);
+    
+}
+.RightPortion img{  /* For The Image Present In Right Section*/
+    width: 700px;
+} 
